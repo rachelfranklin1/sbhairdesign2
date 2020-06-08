@@ -6,51 +6,37 @@ import { emailStrings } from "./ContactStrings"
 const EmailContact = () => {
   return (
     <section>
-      <Title title="Contact us" subtitle="now" />
+      <Title title="Contact the salon" />
       <div>
-        <form
-          action="https://formspree.io/..."
-          method="POST"
-          className={styles.form}
-        >
-          <div>
-            <label htmlFor="name">name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              className={styles.formControl}
-              placeholder={emailStrings.namePlaceholder}
+        <div>Sarah Bavaro Hair Design</div>
+        <div>14 Scotney Way, Thrapston, Kettering, NN14 4SA</div>
+        <div>sbhairdesign1@gmail.com</div>
+        <div>0739878064</div>
+        <div>Follow me!!</div>
+        <div>
+          <a
+            target="_blank"
+            title="follow me on facebook"
+            href="https://www.facebook.com/sbhairdesignandbeauty/"
+          >
+            <img
+              alt="follow me on facebook"
+              src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png"
+              border={0}
             />
-          </div>
-          <div>
-            <label htmlFor="email">email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className={styles.formControl}
-              placeholder={emailStrings.emailPlaceholder}
+          </a>
+          <a
+            target="_blank"
+            title="follow me on instagram"
+            href="https://www.instagram.com/sbhairdesignn/"
+          >
+            <img
+              alt="follow me on instagram"
+              src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png"
+              border={0}
             />
-          </div>
-          <div>
-            <label htmlFor="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              rows="10"
-              className={styles.formControl}
-              placeholder={emailStrings.messagePlaceholder}
-            />
-          </div>
-          <div>
-            <input
-              type="submit"
-              value={emailStrings.submitText}
-              className={styles.submit}
-            />
-          </div>
-        </form>
+          </a>
+        </div>
       </div>
     </section>
   )

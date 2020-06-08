@@ -37,7 +37,6 @@
     "gatsby-plugin-sharp": "^2.2.12",
     "gatsby-plugin-styled-components": "^3.1.2",
     "gatsby-plugin-transition-link": "^1.12.4",
-    "gatsby-source-contentful": "^2.1.78",
     "gatsby-source-filesystem": "^2.1.9",
     "gatsby-transformer-sharp": "^2.2.6",
     "gsap": "^3.2.6",

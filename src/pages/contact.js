@@ -20,7 +20,6 @@ export default ({ data }) => {
         <MapContact />
         <EmailContact />
       </ContactWrapper>
-      <ProjectWithUs />
     </Layout>
   )
 }

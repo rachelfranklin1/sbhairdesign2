@@ -3,23 +3,27 @@ import styled from "styled-components"
 
 const ProjectWithUs = () => {
   return (
-    <ProjectWrapper>
-      <div className="project_info">
-        <h3>Interested in starting a project with us?</h3>
-        <p>Feel free to call us</p>
-      </div>
-      <div className="project_phones">
-        <a href="tel:123456789">123456789</a>
-        <a href="tel:336123456789">336123456789</a>
+    <ProjectWrapper styles={{ padding: "1rem" }}>
+      <div>
+        <iframe
+          src="https://snapwidget.com/embed/824386"
+          class="snapwidget-widget"
+          allowtransparency="true"
+          frameborder="0"
+          scrolling="no"
+          border="none"
+          overflow="hidden"
+          width="1500px"
+          height="200px"
+        ></iframe>
       </div>
     </ProjectWrapper>
   )
 }
 
 const ProjectWrapper = styled.section`
-  background: var(--primaryColor);
+  background: white;
   color: var(--mainWhite);
-  padding: 2rem;
 
   display: flex;
   flex-direction: column;

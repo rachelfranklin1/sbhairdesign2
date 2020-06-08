@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import styles from "../css/navbar.module.css"
 import { FaAlignRight } from "react-icons/fa"
 import links from "../constants/links"
-import Logo from "../../static/images/logo.png"
+import Logo from "../Images/Logo.png"
 import Anilink from "gatsby-plugin-transition-link/AniLink"
 
 const Navbar = () => {
@@ -19,7 +19,6 @@ const Navbar = () => {
           <Anilink fade to="/" data-cy="logo">
             <img src={Logo} alt="logo" />
           </Anilink>
-
           <button
             type="button"
             className={styles.logoBtn}

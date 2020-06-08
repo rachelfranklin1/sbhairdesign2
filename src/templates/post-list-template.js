@@ -63,32 +63,4 @@ const BlogListTemplate = props => {
   )
 }
 
-export const query = graphql`
-  query getPosts($skip: Int!, $limit: Int!) {
-    posts: allContentfulBlogArticle(
-      skip: $skip
-      limit: $limit
-      sort: { fields: date, order: DESC }
-    ) {
-      edges {
-        node {
-          id: contentful_id
-          title
-          slug
-          date
-          category {
-            name
-            slug
-          }
-          image {
-            fluid {
-              ...GatsbyContentfulFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`
-
 export default BlogListTemplate

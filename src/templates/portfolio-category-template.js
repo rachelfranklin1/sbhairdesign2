@@ -7,13 +7,12 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import SEO from "../components/SEO"
 import PortfolioList from "../components/Portfolio/PortfolioList"
 
-const PortoflioCategory = ({ data }) => {
-  const { title, description, portfolioitem } = data.portfolioCategory
+const PortoflioCategory = () => {
   return (
     <Layout>
-      <SEO title={title} description={description} />
+      <SEO title={"title"} description={"description"} />
       <CategoryWrapper className={styles.blog}>
-        <h1>{title}</h1>
+        <h1>{"title"}</h1>
         <AniLink
           fade
           to={`/portfolio`}
@@ -22,7 +21,7 @@ const PortoflioCategory = ({ data }) => {
         >
           back
         </AniLink>
-        <PortfolioList items={portfolioitem} />
+        <PortfolioList items={"portfolioitem"} />
       </CategoryWrapper>
     </Layout>
   )
@@ -43,29 +42,4 @@ const CategoryWrapper = styled.section`
   }
 `
 
-export const getPortfolioCategory = graphql`
-  query getPortfolioCategory($id: String!) {
-    portfolioCategory: contentfulPortfolioItemCategory(
-      contentful_id: { eq: $id }
-    ) {
-      title
-      description {
-        description
-      }
-      portfolioitem {
-        id: contentful_id
-        title
-        slug
-        images {
-          fluid {
-            ...GatsbyContentfulFluid
-          }
-        }
-        category {
-          slug
-        }
-      }
-    }
-  }
-`
 export default PortoflioCategory

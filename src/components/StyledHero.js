@@ -40,5 +40,4 @@ export default styled(StyledHero)`
     display: flex;
     justify-content:start;
     align-items:center;
-
 `

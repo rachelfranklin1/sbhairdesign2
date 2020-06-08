@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import styles from "../css/template.module.css"
 import Image from "gatsby-image"
@@ -19,12 +18,12 @@ const PortfolioItemTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={title} description={description} />
+      <SEO title={"title"} description={"description"} />
       <HeaderStructureWrapper>
-        <h1>{title}</h1>
+        <h1>{"title"}</h1>
         <ImageWrapper>
           <div className="img-container">
-            <Image fluid={mainImage.fluid} alt={title} />
+            <Image fluid={"mainImage.fluid"} alt={"title"} />
           </div>
         </ImageWrapper>
       </HeaderStructureWrapper>
@@ -41,8 +40,8 @@ const PortfolioItemTemplate = ({ data }) => {
               )
             })}
           </div>
-          <h2>{title}</h2>
-          {desc && <p className={styles.desc}>{desc}</p>}
+          <h2>{"title"}</h2>
+          {desc && <p className={styles.desc}>{"desc"}</p>}
           <AniLink
             fade
             to={`/${slug}`}
@@ -103,25 +102,6 @@ const ImageWrapper = styled.article`
       top: -16px;
       left: -16px;
       z-index: -1;
-    }
-  }
-`
-
-export const getPortfolioItem = graphql`
-  query getPortfolioItem($id: String!) {
-    portfolioItem: contentfulPortfolioItem(contentful_id: { eq: $id }) {
-      category {
-        slug
-      }
-      title
-      images {
-        fluid {
-          ...GatsbyContentfulFluid
-        }
-      }
-      description {
-        desc: description
-      }
     }
   }
 `

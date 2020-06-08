@@ -4,19 +4,19 @@ export default [
     text: "home",
   },
   {
+    path: "/aboutMe",
+    text: "about me",
+  },
+  {
     path: "/portfolio",
     text: "portfolio",
   },
-  // {
-  //   path: "/blog",
-  //   text: "blog",
-  // },
   {
-    path: "/blog",
-    text: "blog",
+    path: "/prices",
+    text: "prices",
   },
   {
     path: "/contact",
-    text: "contacts",
+    text: "contact",
   },
 ]

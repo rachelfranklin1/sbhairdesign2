@@ -1,31 +1,25 @@
 import React from "react"
-import {
-  FaDraftingCompass,
-  FaLaptopCode,
-  FaHardHat,
-  FaFeatherAlt,
-} from "react-icons/fa"
+import { FaCut, FaLaptopCode, FaHardHat, FaFeatherAlt } from "react-icons/fa"
 
 export default [
   {
-    icon: <FaDraftingCompass />,
-    title: "Design",
-    text: "We carry out architectural, structural and executive design works",
+    icon: <FaCut />,
+    title: "Styling",
+    text: "mdlsmakl mgnlkanglka'dnglkd",
   },
   {
     icon: <FaLaptopCode />,
-    title: "Restoration",
-    text:
-      "We carry out restoration works, or conservative restoration of the property",
+    title: "Extensions",
+    text: "mdaflkmba bknlad gn joadj goajgod",
   },
   {
     icon: <FaHardHat />,
-    title: "Restructuring",
-    text: "We carry out demolition and structural reconstruction interventions",
+    title: "Balyage",
+    text: "jlsak jis diofjsd iojiodfsjio",
   },
   {
     icon: <FaFeatherAlt />,
-    title: "Restyling",
-    text: "We carry out renovations of interior design: Furniture and finishes",
+    title: "Beauty",
+    text: " kldsj oishjio hios hiodjios jfi",
   },
 ]

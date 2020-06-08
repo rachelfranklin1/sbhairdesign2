@@ -34,15 +34,15 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        // eslint-disable-next-line
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        // eslint-disable-next-line
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     // eslint-disable-next-line
+    //     spaceId: process.env.CONTENTFUL_SPACE_ID,
+    //     // eslint-disable-next-line
+    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

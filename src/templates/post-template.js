@@ -92,21 +92,4 @@ const BlogWrapper = styled.article`
   }
 `
 
-export const getPost = graphql`
-  query getPost($id: String!) {
-    post: contentfulBlogArticle(contentful_id: { eq: $id }) {
-      title
-      date
-      content {
-        json
-      }
-      image {
-        fluid(maxWidth: 2048) {
-          ...GatsbyContentfulFluid
-        }
-      }
-    }
-  }
-`
-
 export default BlogTemplate
