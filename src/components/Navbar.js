@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
           <Anilink fade to="/" data-cy="logo">
-            <img src={Logo} alt="logo" />
+            <img src={Logo} alt="logo" style={{ height: "120px" }} />
           </Anilink>
           <button
             type="button"

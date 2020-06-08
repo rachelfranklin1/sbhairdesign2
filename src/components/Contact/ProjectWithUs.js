@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const ProjectWithUs = () => {
   return (
-    <ProjectWrapper styles={{ padding: "1rem" }}>
+    <ProjectWrapper>
       <div>
         <iframe
           src="https://snapwidget.com/embed/824386"
@@ -30,6 +30,8 @@ const ProjectWrapper = styled.section`
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  padding: 1rem;
+  margin-top: 1.5rem;
 
   .project_phones {
     display: flex;

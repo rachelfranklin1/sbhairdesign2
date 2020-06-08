@@ -6,7 +6,7 @@ import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import SEO from "../components/SEO"
 import ProjectWithUs from "../components/Contact/ProjectWithUs"
-import Splash from "../Images/unsplash.jpeg"
+import Splash from "../Images/hero.jpg"
 
 const Index = ({ data }) => {
   return (
@@ -15,7 +15,6 @@ const Index = ({ data }) => {
       <div
         style={{
           maxWidth: "100%",
-          maxHeight: 450,
           padding: `0 1.0875rem 1.45rem`,
           backgroundImage: `url(${Splash})`,
           backgroundSize: "100% 100%",
@@ -23,11 +22,11 @@ const Index = ({ data }) => {
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
-          opacity: "1 ",
+          opacity: "0.7",
           height: "700px",
         }}
       >
-        {/*<Banner title={"Sarah Bavaro Hair Design"} info="welcome to"></Banner>*/}
+        <Banner title={"Sarah Bavaro Hair Design"} info="welcome to"></Banner>
       </div>
       <ProjectWithUs />
     </Layout>
